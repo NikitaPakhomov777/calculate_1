@@ -16,7 +16,7 @@ def main(data):
         new_dict = {'+': int(num_1) + int(num_2),
                     '-': int(num_1) - int(num_2),
                     '/': int(num_1) // int(num_2),
-                    '*': int(num_1) * int(num_2), }
+                    '*': int(num_1) * int(num_2)}
 
         print(f'Результат: {new_dict[symbol]}\n')
 
