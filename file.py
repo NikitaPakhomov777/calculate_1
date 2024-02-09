@@ -10,7 +10,7 @@ def main(data):
 
         if '.' in num_1 or '.' in num_2 or symbol not in ['+', '-', '/', '*']:
             raise Exception('throws Exception')
-        elif int(data[0]) not in range(1, 11) or int(data[2]) not in range(1, 11) or symbol not in ['+', '-', '/', '*']:
+        elif int(num_1) not in range(1, 11) or int(num_2) not in range(1, 11) or symbol not in ['+', '-', '/', '*']:
             raise Exception('throws Exception')
 
         new_dict = {'+': int(num_1) + int(num_2),
