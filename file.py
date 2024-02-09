@@ -13,10 +13,10 @@ def main(data):
         elif int(data[0]) not in range(1, 11) or int(data[2]) not in range(1, 11) or symbol not in ['+', '-', '/', '*']:
             raise Exception('throws Exception')
 
-        new_dict = {'+': int(data[0]) + int(data[2]),
-                    '-': int(data[0]) - int(data[2]),
-                    '/': int(data[0]) // int(data[2]),
-                    '*': int(data[0]) * int(data[2]), }
+        new_dict = {'+': int(num_1) + int(num_2),
+                    '-': int(num_1) - int(num_2),
+                    '/': int(num_1) // int(num_2),
+                    '*': int(num_1) * int(num_2), }
 
         print(f'Результат: {new_dict[symbol]}\n')
 
