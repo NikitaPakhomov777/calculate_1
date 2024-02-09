@@ -19,10 +19,16 @@ def main(data):
                     '*': int(num_1) * int(num_2)}
 
         print(f'Результат: {new_dict[symbol]}\n')
+        try:
+            data = input('Введите операцию: ').split()
 
-        data = input('Введите операцию: ').split()
+        except KeyboardInterrupt:
+            print('\nВы вышли из программы')
+            break
 
-
-new_str = input('Введите операцию: ').split()
-
-main(new_str)
+            
+try:
+    new_str = input('Введите операцию: ').split()
+    main(new_str)
+except KeyboardInterrupt:
+    print('\nВы вышли из программы')
